@@ -1,6 +1,7 @@
 @use "./components/nav";
 @use "./components/discover";
 @use "./components/waiting";
+@use "./commons/colors";
 html {
   scroll-behavior: smooth;
 }
