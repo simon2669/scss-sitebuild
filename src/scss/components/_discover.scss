@@ -37,6 +37,7 @@
   }
 }
 .unlimited {
+  text-align: center;
   padding: 0 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -100,10 +101,20 @@
 }
 .logocontainer {
   margin-top: 1.5rem;
+  margin-right: 1rem;
   padding: 1rem;
+  border-top: solid $piros 1px;
+  border-right: solid $piros 1px;
+
+  i {
+    background-image: linear-gradient($piros, $fekete);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
   @media screen and (min-width: 992px) {
     margin-top: 3rem;
-    padding: 2rem;
+    padding: 1rem;
     h5 {
       p {
         font-size: 3rem;

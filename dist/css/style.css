@@ -16,6 +16,9 @@
   color: #fdcc52;
   font-size: 1.5rem;
 }
+.nav__bt a:hover {
+  color: #ffffff;
+}
 .nav__hamburger {
   user-select: none;
   display: flex;
@@ -86,9 +89,13 @@
   list-style: none;
 }
 .nav__ul a {
+  font-size: 1.2rem;
   padding-right: 3rem;
   text-decoration: none;
-  color: black;
+  color: #212529;
+}
+.nav__ul a:hover {
+  color: #ffffff;
 }
 
 .welcome {
@@ -120,6 +127,12 @@
   background: transparent;
   border: none;
   margin-bottom: 3rem;
+}
+.kezdolap__bal-button:hover a {
+  transition: all 300ms;
+  background-color: #fdcc52;
+  border-color: #fdcc52;
+  border: 4px;
 }
 .kezdolap__bal-button a {
   font-size: 2rem;
@@ -201,6 +214,7 @@
 }
 
 .unlimited {
+  text-align: center;
   padding: 0 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -263,12 +277,21 @@
 
 .logocontainer {
   margin-top: 1.5rem;
+  margin-right: 1rem;
   padding: 1rem;
+  border-top: solid #da2431 1px;
+  border-right: solid #da2431 1px;
+}
+.logocontainer i {
+  background-image: linear-gradient(#da2431, #212529);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 @media screen and (min-width: 992px) {
   .logocontainer {
     margin-top: 3rem;
-    padding: 2rem;
+    padding: 1rem;
   }
   .logocontainer h5 p {
     font-size: 3rem;
@@ -308,6 +331,12 @@
   border: none;
   margin-bottom: 3rem;
 }
+.waiting button:hover a {
+  transition: all 300ms;
+  background-color: #fdcc52;
+  border-color: #fdcc52;
+  border: 4px;
+}
 .waiting button a {
   font-size: 2rem;
   border: solid 2px #ffffff;
@@ -325,6 +354,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
