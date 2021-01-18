@@ -1,4 +1,5 @@
 @use "../commons/colors" as *;
+@use "sass:color";
 .stop-waiting {
   height: 90vh;
   background: url("/dist/img/bg-cta.jpg") center;
@@ -43,6 +44,80 @@
 
       text-decoration: none;
       color: $fehér;
+    }
+  }
+}
+
+.friends {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-color: $narancssárga-sötét;
+
+  h6 {
+    margin-top: 0rem;
+    font-size: 3rem;
+    span {
+      i {
+        color: $piros;
+      }
+    }
+  }
+  &__logos {
+    margin-top: -6rem;
+    display: flex;
+    flex-direction: row;
+    &-3 {
+      background-color: #dd4b39;
+    }
+    &-2 {
+      background-color: #3b5998;
+    }
+    &-1 {
+      background-color: #1da1f2;
+    }
+    div {
+      width: 3rem;
+      height: 3rem;
+      padding: 2rem;
+      margin: 1rem;
+
+      border-radius: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: $fehér;
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 3rem;
+  height: 20vh;
+  margin-top: -3rem;
+  background-color: $fekete-light;
+  text-align: center;
+  color: scale-color($color: $fehér, $lightness: -30%);
+  ul {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    a {
+      padding: 1rem;
+      text-decoration: none;
+      color: scale-color($color: $fehér, $lightness: -30%);
+      &:hover {
+        color: #fdcc52;
+      }
     }
   }
 }
